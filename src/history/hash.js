@@ -37,9 +37,6 @@ export class HashHistory extends History {
         if (supportsScroll) {
           handleScroll(this.router, route, current, true)
         }
-        if (!supportsPushState) {
-          replaceHash(route.fullPath)
-        }
       })
     })
   }
